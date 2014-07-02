@@ -81,8 +81,8 @@ namespace MyControlLibrary
 
                 default:
 
-                    Debug.WriteLine("An unexpected 'RightToLeft' value was encountered.  " + Value);
-
+                    Trace.WriteLine("An unexpected 'RightToLeft' value was encountered.  " + Value);
+                    
                     Value = 1;
 
                     break;
