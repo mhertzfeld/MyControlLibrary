@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 
@@ -80,7 +81,13 @@ namespace MyControlLibrary
 
                 default:
 
-                    throw new Exception("An unexpected 'RightToLeft' value was encountered.");
+                    Debug.WriteLine("An unexpected 'RightToLeft' value was encountered.  " + Value);
+
+                    Value = 1;
+
+                    break;
+                    //throw new Exception("An unexpected 'RightToLeft' value was encountered.");
+                    
             }
         }
 
